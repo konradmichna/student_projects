@@ -93,7 +93,7 @@ int main(int argc, char **argv) {
 ## Wyniki:
 Po uruchomieniu programu zobaczysz wyniki w formacie podobnym do poniższego przykładu:
 
-<img width="100%" src="./wynik.png"/>
+<img width="100%" src="./wynik_testy.png"/>
 
 ```
 Czas wykonania instrukcji if-else: 12345 mikrosekund
