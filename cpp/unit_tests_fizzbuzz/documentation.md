@@ -171,3 +171,7 @@ Ten projekt jest prostym przykładem implementacji klasycznego zadania FizzBuzz,
 W projekcie pokazano:
 - Rozdzielenie funkcji od logiki głównego programu.
 - Stosowanie testów jednostkowych w celu zapewnienia jakości kodu.
+
+## 10. Wyniki testów
+
+<img width="100%" src="./wynik_fizzbuzz.png"/>
