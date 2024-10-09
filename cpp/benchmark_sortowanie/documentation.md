@@ -37,6 +37,10 @@ Celem przeprowadzonych testów jest porównanie wydajności dwóch algorytmów s
 - **Pomiar czasu**: Użycie `std::chrono` do pomiaru czasu wykonania sortowania.
 - **Wynik**: Czas sortowania jest wyświetlany w sekundach.
 
+### 3. Wyniki testów
+
+<img width="100%" src="./wynik_sortowanie.png"/>
+
 ## Przykładowy Kod Testów
 
 Poniżej przedstawiono przykładowy kod do przeprowadzenia testów wydajności dla obu algorytmów:
