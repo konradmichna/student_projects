@@ -134,24 +134,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-## 6. Instrukcja kompilacji
-
-Aby skompilować ten projekt, musisz mieć zainstalowane Google Test oraz kompilator obsługujący C++.
-
-### Kompilacja programu głównego:
-
-```bash
-g++ main.cpp functions.cpp -o fizzbuzz
-```
-
-### Kompilacja i uruchomienie testów jednostkowych:
-
-```bash
-g++ main_test.cpp functions.cpp -lgtest -lgtest_main -pthread -o fizzbuzz_tests
-./fizzbuzz_tests
-```
-
-## 7. Instrukcja uruchamiania
+## 6. Instrukcja uruchamiania
 
 - **Uruchomienie programu głównego**:
   ```bash
@@ -165,13 +148,13 @@ g++ main_test.cpp functions.cpp -lgtest -lgtest_main -pthread -o fizzbuzz_tests
   ```
   Testy sprawdzą, czy funkcja `fizzBuzz` działa poprawnie w różnych przypadkach.
 
-## 8. Wymagania
+## 7. Wymagania
 
 - Kompilator C++ (np. `g++`)
 - Biblioteka Google Test
 - System operacyjny z obsługą narzędzi do kompilacji (np. Linux, macOS, Windows z odpowiednim środowiskiem)
 
-## 9. Działanie programu
+## 8. Działanie programu
 
 - Program prosi użytkownika o podanie liczby.
 - Wywołuje funkcję `fizzBuzz`, która:
@@ -181,7 +164,7 @@ g++ main_test.cpp functions.cpp -lgtest -lgtest_main -pthread -o fizzbuzz_tests
   - Zwraca liczbę w postaci tekstu, jeśli nie jest podzielna przez 3 ani 5.
 - Program wyświetla wynik na ekranie.
 
-## 10. Wnioski
+## 9. Wnioski
 
 Ten projekt jest prostym przykładem implementacji klasycznego zadania FizzBuzz, a testy jednostkowe zapewniają poprawność działania funkcji w różnych przypadkach. Dzięki wykorzystaniu Google Test możliwe jest automatyczne sprawdzanie funkcjonalności oraz szybkie wykrywanie błędów.
 
