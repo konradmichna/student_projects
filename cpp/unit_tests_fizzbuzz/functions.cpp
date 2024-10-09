@@ -9,6 +9,6 @@ string fizzBuzz(int n) {
     } else if (n % 5 == 0) {
         return "Buzz";
     } else {
-        return std::to_string(n);
+        return to_string(n);
     }
 }
