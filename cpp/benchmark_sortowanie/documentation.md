@@ -5,8 +5,6 @@
 Celem przeprowadzonych testów jest porównanie wydajności dwóch algorytmów sortujących: **Bubble Sort** i **Quick Sort**. Testy mierzą czas wykonania sortowania dla losowo wygenerowanych wektorów zawierających 10,000 elementów.
 
 ## Wymagania
-
-- **C++11 lub nowszy**: Użycie nowoczesnych funkcji i kontenerów STL.
 - **Google Test**: Framework do testowania jednostkowego w C++.
 
 ## Algorytmy
