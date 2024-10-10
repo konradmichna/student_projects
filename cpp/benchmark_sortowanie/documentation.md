@@ -13,11 +13,9 @@ Celem przeprowadzonych testów jest porównanie wydajności dwóch algorytmów s
 
 1. **Bubble Sort**:
    - Algorytm prosty, ale nieefektywny dla dużych zbiorów danych.
-   - W przypadku sortowania bąbelkowego czas działania wynosi O(n²) w najgorszym przypadku.
 
 2. **Quick Sort**:
    - Algorytm dziel i zwyciężaj.
-   - Osiąga czas działania O(n log n) w przeciętnym przypadku, co czyni go znacznie bardziej efektywnym niż Bubble Sort.
 
 ## Opis Testów
 
@@ -46,34 +44,33 @@ Celem przeprowadzonych testów jest porównanie wydajności dwóch algorytmów s
 ### Porównanie Algorytmów Sortujących
 
 ### BubbleSort
-- Jest to algorytm o złożoności czasowej O(n²) w najgorszym i przeciętnym przypadku, co czyni go mało efektywnym dla dużych zbiorów danych.
-- W praktyce może być szybszy dla małych wektorów, zwłaszcza gdy dane są częściowo posortowane, dzięki zastosowaniu flagi `swapped`, która umożliwia wcześniejsze zakończenie sortowania.
+- Jest to algorytm, którego czas działania znacznie rośnie wraz z liczbą elementów do posortowania. Przy podwojeniu liczby elementów czas wykonania może wzrosnąć czterokrotnie, co czyni go mało efektywnym dla dużych zbiorów danych.
+- W praktyce może działać szybciej dla małych wektorów, zwłaszcza gdy dane są częściowo posortowane, dzięki zastosowaniu flagi `swapped`, która pozwala na wcześniejsze zakończenie sortowania.
 
 ### QuickSort
-- Wykazuje znacznie lepszą wydajność z złożonością O(n log n) w przeciętnym przypadku. Jest znacznie bardziej efektywny dla dużych zbiorów danych.
-- W implementacji użyto podziału na podzbiory, co zwiększa czytelność kodu, ale może prowadzić do problemów z wydajnością w przypadku danych już posortowanych (w takim przypadku zaleca się losowe wybieranie pivota).
+- Wykazuje znacznie lepszą wydajność i działa szybko, nawet na dużych zbiorach danych. Czas wykonania rośnie wolniej w miarę wzrostu liczby elementów.
+- Implementacja wykorzystuje podział na podzbiory, co zwiększa czytelność kodu, ale w przypadku już posortowanych danych może prowadzić do obniżonej wydajności. Z tego powodu zaleca się losowe wybieranie elementu jako pivota.
 
 ### Testy Wydajności
-- Oba algorytmy sortujące zostały przetestowane na wektorze o rozmiarze 10,000 elementów. Czas wykonania został zmierzony przy użyciu wysokiej rozdzielczości zegara, co daje dokładny pomiar wydajności.
-- Wyniki testów wydajności można porównać, aby w praktyce zobaczyć różnice w czasie wykonania między dwoma algorytmami.
+- Oba algorytmy sortujące zostały przetestowane na wektorze o rozmiarze 10,000 elementów. Czas wykonania mierzono przy użyciu zegara o wysokiej rozdzielczości, co zapewnia dokładne pomiary wydajności.
+- Wyniki testów można porównać, aby zobaczyć różnice w czasie wykonania między algorytmami.
 
 ### Losowość Danych
-- Zastosowanie generatora liczb losowych do wypełnienia wektora danymi testowymi zapewnia różnorodność przypadków testowych, co jest istotne dla wiarygodnych wyników pomiarów wydajności.
+- Użycie generatora liczb losowych do wypełnienia wektora danymi testowymi zapewnia różnorodność przypadków testowych, co jest ważne dla wiarygodnych wyników pomiarów wydajności.
 
 ### Możliwości Rozwoju
-- Można rozważyć dodanie innych algorytmów sortujących do porównania, takich jak MergeSort czy HeapSort, co może dostarczyć jeszcze szerszego kontekstu dotyczącego wydajności sortowania.
-- Można również zbadać różne strategie wyboru pivota w QuickSort (np. mediana, losowy element) i ich wpływ na wydajność.
+- Można rozważyć dodanie innych algorytmów sortujących do porównania, takich jak MergeSort czy HeapSort, co może dostarczyć szerszego kontekstu dotyczącego wydajności sortowania.
+- Warto również zbadać różne strategie wyboru pivota w QuickSort (np. mediana, losowy element) i ich wpływ na wydajność.
 
 ### Uwagi dotyczące implementacji
 
-### Zarządzanie Pamięcią
-- QuickSort używa dodatkowych wektorów dla podzbiorów, co może zwiększać zużycie pamięci w przypadku dużych danych. W przyszłości można rozważyć in-place QuickSort, aby zminimalizować wykorzystanie pamięci.
+## Zarządzanie Pamięcią
+- QuickSort wykorzystuje dodatkowe wektory do przechowywania podzbiorów, co może zwiększać zużycie pamięci w przypadku dużych danych. W przyszłości można rozważyć in-place QuickSort, aby zminimalizować wykorzystanie pamięci.
 
 ### Konstrukcja Testów
-- Zastosowanie frameworka Google Test pozwala na łatwe rozszerzanie testów i ich automatyzację, co jest korzystne w przypadku większych projektów.
+- Zastosowanie frameworka Google Test umożliwia łatwe rozszerzanie testów oraz ich automatyzację, co jest korzystne w większych projektach.
 
-
-## Przykładowy Kod Testów
+### Przykładowy Kod Testów
 
 Poniżej przedstawiono przykładowy kod do przeprowadzenia testów wydajności dla obu algorytmów:
 
