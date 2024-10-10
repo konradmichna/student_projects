@@ -100,16 +100,8 @@ Czas wykonania instrukcji if-else: 12345 mikrosekund
 Czas wykonania instrukcji switch: 9876 mikrosekund
 ```
 
-## Kompilacja i uruchomienie:
+## Uruchomienie:
 
-### Kompilacja:
-Zakładając, że masz prawidłowo skonfigurowaną bibliotekę Google Test, możesz skompilować program za pomocą następującej komendy:
-
-```bash
-g++ -std=c++11 -isystem /path/to/gtest/include -pthread test.cpp /path/to/gtest/libgtest.a /path/to/gtest/libgtest_main.a -o benchmark_test
-```
-
-### Uruchomienie:
 Uruchomienie programu odbywa się za pomocą:
 
 ```bash
