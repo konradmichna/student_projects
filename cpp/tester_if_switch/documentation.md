@@ -113,7 +113,7 @@ g++ -std=c++11 -isystem /path/to/gtest/include -pthread test.cpp /path/to/gtest/
 Uruchomienie programu odbywa się za pomocą:
 
 ```bash
-./benchmark_test
+sh kompiluj.sh
 ```
 
 Program uruchomi oba testy jednostkowe, zmierzy czas wykonania funkcji `if-else` i `switch`, a następnie wyświetli wyniki w mikrosekundach.
