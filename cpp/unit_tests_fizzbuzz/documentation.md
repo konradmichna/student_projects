@@ -150,7 +150,7 @@ int main(int argc, char **argv) {
 
 ## 7. Wymagania
 
-- Kompilator C++ (np. `g++`)
+- Kompilator C++ 
 - Biblioteka Google Test
 - System operacyjny z obsługą narzędzi do kompilacji (np. Linux, macOS, Windows z odpowiednim środowiskiem)
 
