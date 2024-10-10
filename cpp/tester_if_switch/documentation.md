@@ -7,7 +7,7 @@ Program testuje wydajność dwóch funkcji, które wykorzystują instrukcje waru
 Program wykorzystuje framework Google Test do przeprowadzania benchmarków, które mierzą czas wykonania funkcji w zależności od użytej instrukcji warunkowej.
 
 ## Wymagania:
-- Kompilator C++ obsługujący C++11 lub nowszy (dla wsparcia `chrono` i lambd).
+- Kompilator C++ 
 - Biblioteka **Google Test** (GTest) do przeprowadzania testów jednostkowych.
 - Prawidłowa konfiguracja do połączenia programu z biblioteką GTest podczas kompilacji.
 
