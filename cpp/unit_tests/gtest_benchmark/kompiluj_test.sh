@@ -3,7 +3,7 @@ rm main_test
 clear
 echo "----Kompilacja benchmarka testujacego----"
 
-g++ -std=c++11 -O2 -lbenchmark -lpthread main_test.cpp -o main_test
+g++ -std=c++11 main_test.cpp -o main_test  -lbenchmark -lpthread
 
 echo "---Kompilacja benchmarka ukonczona----"
 echo "---Uruchamianie beanchmarka---"
